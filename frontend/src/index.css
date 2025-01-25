@@ -1,0 +1,239 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+/* layout */
+:root {
+  --primary: #1aac83;
+  --error: #e7195a;
+}
+body {
+  background: #f1f1f1;
+  margin: 0;
+  font-family: "Poppins";
+}
+/* header {
+  background: #fff;
+} */
+/* header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} */
+/* header a {
+  color: #333;
+  text-decoration: none;
+} */
+.pages{
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* homepage */
+.home {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 100px;
+}
+.workout-details {
+  background: #fff;
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+.workout-details h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: var(--primary);
+}
+.workout-details p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
+}
+.workout-details span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: #f1f1f1;
+  padding: 6px;
+  border-radius: 50%;
+  color: #333;
+}
+
+/* new workout form */
+label, input {
+  display: block;
+}
+input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+form button {
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+}
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+header {
+  background: #fff;
+  text-align: center;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+header a {
+  color: #006400; 
+  font-size: 1.5em; 
+  font-weight: 600; 
+  text-decoration: none;
+}
+
+header a:hover {
+  color: #004d33; 
+}
+
+form {
+  background: #fff;
+  height: 440px;
+  padding: 20px 20px; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+form label {
+  font-size: 1em; 
+  font-weight: 500; 
+  margin-bottom: 5px; 
+  color: #333;
+}
+
+form input {
+  padding: 12px; 
+  margin-top: 8px;
+  margin-bottom: 20px;
+  width: 100%; 
+  border: 1px solid #ddd;
+  border-radius: 6px; 
+  font-size: 1em;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+form input:focus {
+  border: 1px solid var(--primary); 
+  box-shadow: 0 0 5px var(--primary); 
+  outline: none; 
+}
+
+form button {
+  background: var(--primary);
+  border: none;
+  color: #fff;
+  padding: 12px 20px; 
+  font-family: "Poppins";
+  font-size: 1em;
+  font-weight: 600; 
+  border-radius: 6px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+form button:hover {
+  background: #138f6e; 
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-sort-filter {
+  display: flex;
+  gap: 10px;
+}
+
+.main-section {
+  display: flex;
+  gap: 20px;
+}
+
+.workouts-section {
+  flex: 3;
+  border-right: 1px solid #ccc;
+  padding-right: 20px;
+}
+
+.form-section {
+  flex: 1;
+}
+
+.bottom-section {
+  display: flex;
+  gap: 20px;
+}
+
+.count-section {
+  flex: 1;
+}
+
+.chart-section {
+  flex: 2;
+}
+
+.search-bar {
+  width: 400px;
+  padding: 12px;
+  margin-right: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+.dropdown {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.dropdown.light-green {
+  background-color: #d4f4d4;
+  color: #2d6a2d;
+  border: 1px solid #4caf50;
+}
